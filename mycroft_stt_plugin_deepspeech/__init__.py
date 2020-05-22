@@ -5,7 +5,7 @@ from mycroft.stt import STT
 from mycroft.util.log import LOG
 
 
-class PluginSTT(STT):
+class DeepspeechSTTPlugin(STT):
     def __init__(self):
         super().__init__()
 

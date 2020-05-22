@@ -5,6 +5,9 @@ from setuptools import setup
 with open(join(dirname(abspath(__file__)), 'requirements.txt')) as f:
     requirements = f.readlines()
 
+PLUGIN_ENTRY_POINT = ('deepspeech_stt_plug = '
+                      'mycroft_stt_plugin_deepspeech:DeepspeechSTTPlugin')
+
 setup(
     name='mycroft-stt-plugin-deepspeech',
     version='0.2',
@@ -28,4 +31,5 @@ setup(
         'Programming Language :: Python :: 3.6',
     ],
     keywords='mycroft plugin stt',
+    entry_points={'mycroft.plugin.stt': PLUGIN_ENTRY_POINT}
 )
