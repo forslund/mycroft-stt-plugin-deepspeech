@@ -1,2 +1,2 @@
-deepspeech==0.4.1
+deepspeech==0.7.1
 numpy==1.16.4
